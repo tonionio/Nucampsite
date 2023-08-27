@@ -20,7 +20,6 @@
 </head>
 
 <body>
-
     <!-- header -->
     <header>
         <div class="container">
@@ -60,6 +59,11 @@
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i
                                 class="fa-solid fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
+                <div id="weather" class="d-none d-md-flex align-items-center">
+                    <i id="weather-icon"></i>
+                    <span id="weather-temp"></span>
+                    <span id="weather-description" class="d-none d-lg-inline"></span>
+                </div>
                 <span class="navbar-text ms-auto">
                     <a role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
                         <i class="fa-solid fa-right-to-bracket"></i> Login
@@ -201,6 +205,14 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
+                <div class="btn-group" id="carouselButton">
+                    <button class="btn btn-dark btn-sm" id="carouselPause">
+                        <i class="fa-solid fa-pause text-white"></i>
+                    </button>
+                    <button class="btn btn-dark btn-sm" id="carouselPlay">
+                        <i class="fa-solid fa-play text-white"></i>
+                    </button>    
+                </div>
             </div>
         </section>
 
@@ -303,6 +315,7 @@
 
     <!-- Bootstrap JavaScript plugins -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="js/scripts.js" defer></script>
 
 </body>
 
